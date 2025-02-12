@@ -63,6 +63,7 @@ html {
 .item {
     margin: 15px 0;
 }
+
 .product-img {
     border-radius: 8px;
     object-fit: cover;
@@ -71,26 +72,59 @@ html {
     width: 100%;
 }
 
+.product-img__selected {
+    border: solid 2px var(--Red);
+}
+
 .button-wrapper {
     border-radius: 50px;
     box-shadow: 1px 1px 3px #c9c9c9;
     border: solid 1px var(--Rose-300);
     background-color: var(--White);
+    font-weight: bold;
+    font-size: 1.4rem;
     display: flex;
     position: absolute;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     left: 0;
     right: 0;
     margin: -25px auto;
     padding: 5px 12px;
-    width: 135px;
+    height: 40px;
+    width: 150px;
+}
+
+.button-wrapper__selected {
+    background-color: var(--Red);
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 12px;
 }
 
 .button-wrapper img {
-    width: 30px;
+    width: 20px;
     margin: auto 3px;
 }
+
+.button-wrapper__selected img {
+    border: solid 1px var(--White);
+    border-radius: 50px;
+    margin: auto 3px;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+/* .button-wrapper__selected img:hover {
+    border: solid 1px var(--Red);
+    background-color: var(--White);
+    color: var(--Red);
+    
+} */
 
 .description {
     display: flex;
@@ -101,7 +135,7 @@ html {
 }
 
 .product-category {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--Rose-400);
 }
 
@@ -120,15 +154,41 @@ html {
 .cart {
     background-color: var(--White);
     border-radius: 8px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
     margin-top: 10px;
+    height: 270px;
     width: 100%;
 }
 
 .cart p {
-    font-size: large;
+    font-size: x-large;
     font-weight: 900;
     color: var(--Red);
 }
+
+.cart__empty {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.cart__empty img {
+    border-radius: 8px;
+    object-fit: contain;
+    object-position: center;
+    height: 150px;
+    width: 100%;
+}
+
+.cart__empty span {
+    font-size: small;
+    margin: auto;
+    font-weight: 900;
+    color: var(--Rose-400);
+}
+
+
 .attribution { margin-top: 20px; font-size: 1rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
