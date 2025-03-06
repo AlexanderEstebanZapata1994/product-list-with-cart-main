@@ -26,9 +26,9 @@
         <div class="item">
           <img class="product-img product-img__selected" src="/assets/images/image-waffle-mobile.jpg" alt="">
           <span class="button-wrapper button-wrapper__selected">
-            <img src="/assets/images/icon-decrement-quantity.svg"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
             4
-            <img src="/assets/images/icon-increment-quantity.svg"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
           </span>
           <span class="description">
             <p class="product-category">Waffle</p>
@@ -43,47 +43,44 @@
             Add to Cart
           </span>
           <span class="description">
-            <p class="product-category">Waffle</p>
-            <p class="product-name">Waffle with Berries</p>
-            <p class="product-price">$6.50</p>
-          </span>
-        </div>
-        <div class="item">
-          <img class="product-img" src="/assets/images/image-baklava-mobile.jpg" alt="">
-          <span class="button-wrapper">
-            <img src="/assets/images/icon-add-to-cart.svg"/>
-            Add to Cart
-          </span>
-          <span class="description">
-            <p class="product-category">Waffle</p>
-            <p class="product-name">Waffle with Berries</p>
-            <p class="product-price">$6.50</p>
+            <p class="product-category">Cake</p>
+            <p class="product-name">Classic Tiramisu</p>
+            <p class="product-price">$7.50</p>
           </span>
         </div>
       </section>
     </section>
 
     <section class="cart">
-      <p>Your Cart (0)</p>
-      <section class="cart__empty">
+      <p>Your Cart (1)</p>
+      <!-- <section class="cart__empty">
         <img src="/assets/images/illustration-empty-cart.svg" alt="">
         <span>Your added items will appear here</span>
-      </section>
-      <!-- <section class="cart__full">
-        <p>Classic Tiramisu</p>
-        <span class="qty">1x</span>
-        <span class="unit-price">$5.50</span>
-        <span class="total-price">$5.50</span>
-        <span class="remove"><i></i></span>
-        <hr/>
-        <div>
-          <p>Order Total</p>
-          <h2 class="gran-total">$46.50</h2>
-        </div>
-        <section><i></i>This is a <strong>carbon-neutral</strong> delivery</section>
-        <button>Confirm Order</button>
       </section> -->
+      <section class="cart__full">
+        <ul>
+          <li>
+            <div class="details">
+              <span class="product-name">Waffle with Berries</span>
+              <section class="values-details">
+                <span class="qty value-detail">4x</span>
+                <span class="unit-price prices value-detail">@ $6.50</span>
+                <span class="total-price prices value-detail"><strong>$26.00</strong></span>
+              </section>
+            </div>
+            <span class="remove-button"><img src="/assets/images/icon-remove-item.svg" alt="remove item icon"></span>
+          </li>
+        </ul>
+        <div class="grand-total">
+          <span>Order Total</span>
+          <h2 class="total-delivery">$26.00</h2>
+        </div>
+        <section class="disclaimer">
+            <img src="/assets/images/icon-carbon-neutral.svg" alt="image-carbon neutral">&nbsp;This is a&nbsp;<strong>carbon-neutral</strong>&nbsp;delivery</section>
+        <button class="button-confirmation">Confirm Order</button>
+      </section>
     </section>
+    <br>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
       Coded by <a href="#">Alexander Esteban</a>.
